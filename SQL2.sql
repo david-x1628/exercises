@@ -9,6 +9,9 @@ INNER JOIN Album ON Track.AlbumId = Album.AlbumId
 INNER JOIN Artist ON Album.ArtistId = Artist.ArtistId
 WHERE Track.Name = 'Intro';
 
-
+SELECT count(m.MediaTypeId), m.Name FROM Track as t
+LEFT JOIN Mediatype as m
+ON t.MediaTypeId = m.MediaTypeId
+GROUP BY m.Name;
 
 
