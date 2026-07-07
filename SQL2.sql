@@ -14,4 +14,7 @@ LEFT JOIN Mediatype as m
 ON t.MediaTypeId = m.MediaTypeId
 GROUP BY m.Name;
 
-
+SELECT COUNT(t.Name) as c, t.Name FROM track as t
+GROUP BY t.Name
+having c > 1
+order by c desc;
