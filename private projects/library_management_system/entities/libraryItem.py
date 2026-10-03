@@ -12,7 +12,7 @@ class libraryItem():
                  fees: dict,
                  reserved_by: str | None = None,
                  lent_to: str | None = None):
-        """Initiate library item.
+        """Instantiate library item.
         
         Arguments:
             id: int
